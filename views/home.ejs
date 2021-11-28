@@ -1,0 +1,27 @@
+<%- include('./partials/header') -%>
+<div class="bdy">
+<h1>Home</h1>
+<p><%= homeStartingContent %> </p>
+<% if( arr.length){ %> 
+
+<% arr.forEach(element => { %>
+  
+    <div class="postDiv">
+    <h2><%= element.title %>  </h2>
+    <form action="/delete/<%= element._id %> " method="POST">
+        <button type="submit" class="btnPost" style="padding:0.5rem"> DELETE</button>
+    </form>
+    </div>
+    <p>
+        <% if(element.content.length>100){ %> 
+        <%= element.content.substring(0,100)+" ...  "  %>
+        <a href="/posts/<%= element._id %> ">  Read more</a>
+        <% }else{ %>  
+            <%= element.content %> 
+        <% } %> 
+    </p>
+    <% }); %> 
+
+<% } %> 
+</div>
+<%- include('./partials/footer') -%> 

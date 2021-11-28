@@ -1,0 +1,67 @@
+.bdy
+{
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+.container-fluid {
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    
+}
+.navbar-nav  li a:hover {
+    background-color: #e3f2fd;
+    color: #1abc9c !important;
+}
+.formDiv
+{
+    background-color: #c3fae3;
+    margin-top:5%;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 8%;
+    border-radius: 2%;
+}
+.postDiv{
+    padding-top: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.btnPost{
+    padding:1rem;
+    margin-top: 20px;
+    border-radius: 0.8em;
+}
+
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+    position: fixed;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	padding-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}

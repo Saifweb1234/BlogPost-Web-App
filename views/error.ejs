@@ -1,0 +1,15 @@
+<%- include('./partials/header') -%>
+
+<h1>Errors</h1>
+<% arr.forEach(ele=> {%>
+<p><%= ele%> </p>
+<% })%>
+<div style="display:flex;">
+<form action="/compose " method="GET">
+    <button type="submit" class="btnPost" style="padding:0.5rem"> Try Again</button>
+</form>&nbsp;&nbsp;&nbsp;&nbsp;
+<form action="/" method="get">
+    <button type="submit" class="btnPost" style="padding:0.5rem"> Home</button>
+</form>
+</div>
+<%- include('./partials/footer') -%> 

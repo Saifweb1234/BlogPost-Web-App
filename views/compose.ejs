@@ -1,0 +1,23 @@
+<%- include('partials/header') %> 
+
+<div class="formDiv">
+<h1 style="text-align:center; margin:5px 20px; padding-top: 0px;">Compose</h1>
+<form  action="/compose" method="POST">
+  
+    <div class="form-group ">
+      <label for="exampleInputEmail1 " >Title</label>
+      <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
+        <label for="example">Post</label>
+        <textarea name="content" class="form-control " aria-label="With textarea" id="example" rows="5" cols="30"></textarea>
+     </div>
+     <button type="submit" class="btn btn-primary">Publish</button>
+     </div>
+  </form>
+
+
+
+<!-- <form action="/" method="POST">
+<input type="text" name="input">
+<button type="submit">Publish</button>
+</form> -->
+<%- include('partials/footer') %> 
